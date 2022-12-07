@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/window"
+        android:layout_width="500dp"
+        android:layout_height="305dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/window_box"
+        android:shadowRadius="1.6" />
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/how_to_use"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_35sdp" />
+
+    <TextView
+        android:id="@+id/txt_window1"
+        android:layout_width="285sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/lucid_dream"
+        android:justificationMode="inter_word"
+        android:text="@string/select_a_foundation_drink_of_your_choice_and_then_select_a_flavouring_you_want_to_add_in_start_the_mix_and_see_what_result_you_ll_get"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/txt_window2"
+        android:layout_width="285sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425sp"
+        android:layout_below="@id/txt_window1"
+        android:fontFamily="@font/lucid_dream"
+        android:justificationMode="inter_word"
+        android:text="@string/there_s_a_total_of_9_drinks_for_you_to_try"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/txt_window3"
+        android:layout_width="390sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/lucid_dream"
+        android:justificationMode="inter_word"
+        android:text="@string/press_anywhere"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22sdp"
+        tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>

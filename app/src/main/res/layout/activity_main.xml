@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinkgrid_bg"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_table"
+        android:layout_width="400sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="340dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/table" />
+
+    <!-- BOX -->
+    <TextView
+        android:id="@+id/pink_box"
+        android:layout_width="420sp"
+        android:layout_height="390sp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/welcome_to_dreamy_drinks"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/custom_button"
+        android:elevation="20sp"
+        android:fontFamily="serif"
+        android:text="@string/get_started"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_welcome" />
+
+    <ImageView
+        android:id="@+id/img_shaker"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/todo1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/pink_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shaker"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_coffee_pour"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="80sp"
+        android:layout_marginBottom="80sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee_pour" />
+
+    <ImageView
+        android:id="@+id/img_tea_pour"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="80sp"
+        android:layout_marginBottom="80sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tea_pour" />
+
+    <ImageView
+        android:id="@+id/img_juice_pour"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="30sp"
+        android:layout_marginBottom="80sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/juice_pour" />
+
+    <ImageView
+        android:id="@+id/img_milk_pour"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="5sp"
+        android:layout_marginBottom="80sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/milk_pour" />
+
+    <ImageView
+        android:id="@+id/img_caramel_drop"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="200sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/caramel" />
+
+    <ImageView
+        android:id="@+id/img_cocoa_drop"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="200sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cocoa_paste" />
+
+    <ImageView
+        android:id="@+id/img_mint_drop"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="200sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mint" />
+
+    <ImageView
+        android:id="@+id/img_lemon_drop"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="200sp"
+        android:contentDescription="@string/todo_coffee_pour"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lemon" />
+
+    <ImageView
+        android:id="@+id/img_shakerBottle"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="22dp"
+        android:contentDescription="@string/todo2"
+        app:layout_constraintBottom_toTopOf="@+id/pink_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shaker_bottle" />
+
+    <!-- FOUNDATION SECTION -->
+    <TextView
+        android:id="@+id/txt_foundation"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/select_foundation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_tea"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_coffee"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/circle_tea"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_juice"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintLeft_toRightOf="@id/circle_tea"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <ImageView
+        android:id="@+id/img_coffee"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo_coffee"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_coffee"
+        app:layout_constraintLeft_toLeftOf="@id/circle_coffee"
+        app:layout_constraintRight_toRightOf="@id/circle_coffee"
+        app:layout_constraintTop_toTopOf="@id/circle_coffee"
+        app:srcCompat="@drawable/coffee" />
+
+    <ImageView
+        android:id="@+id/img_tea"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/todo_tea"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_tea"
+        app:layout_constraintLeft_toLeftOf="@id/circle_tea"
+        app:layout_constraintRight_toRightOf="@id/circle_tea"
+        app:layout_constraintTop_toTopOf="@id/circle_tea"
+        app:srcCompat="@drawable/tea"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_juice"
+        android:layout_width="65sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="6sp"
+        android:layout_marginBottom="9dp"
+        android:contentDescription="@string/todo_juice"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_juice"
+        app:layout_constraintLeft_toLeftOf="@id/circle_juice"
+        app:layout_constraintRight_toRightOf="@id/circle_juice"
+        app:layout_constraintTop_toTopOf="@id/circle_juice"
+        app:srcCompat="@drawable/juice"
+        tools:ignore="ImageContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/radio_foundation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box">
+
+        <RadioButton
+            android:id="@+id/radio_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_tea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_juice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_drink_name"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="9sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/dot"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_tea"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="serif"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box" />
+
+    <!-- FLAVORING SECTION -->
+    <TextView
+        android:id="@+id/txt_flavor"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/select_flavor"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_one"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_two"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/circle_one"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <!-- CIRCLE -->
+    <TextView
+        android:id="@+id/circle_three"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_box"
+        app:layout_constraintLeft_toRightOf="@id/circle_one"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <!-- COFFEE FLAVORS-->
+    <ImageView
+        android:id="@+id/img_milk"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5sp"
+        android:contentDescription="@string/todo_milk"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_two"
+        app:layout_constraintLeft_toLeftOf="@id/circle_two"
+        app:layout_constraintRight_toRightOf="@id/circle_two"
+        app:layout_constraintTop_toTopOf="@id/circle_two"
+        app:srcCompat="@drawable/milk" />
+
+    <ImageView
+        android:id="@+id/img_caramel"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5sp"
+        android:contentDescription="@string/todo_caramel"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_one"
+        app:layout_constraintLeft_toLeftOf="@id/circle_one"
+        app:layout_constraintRight_toRightOf="@id/circle_one"
+        app:layout_constraintTop_toTopOf="@id/circle_one"
+        app:srcCompat="@drawable/caramel" />
+
+    <ImageView
+        android:id="@+id/img_cocoa"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20sp"
+        android:contentDescription="@string/todo_caramel"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_three"
+        app:layout_constraintLeft_toLeftOf="@id/circle_three"
+        app:layout_constraintRight_toRightOf="@id/circle_three"
+        app:layout_constraintTop_toTopOf="@id/circle_three"
+        app:srcCompat="@drawable/cocoa_paste" />
+
+    <!-- NON-COFFEE FLAVORS -->
+    <ImageView
+        android:id="@+id/img_mint"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/todo_mint"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_one"
+        app:layout_constraintLeft_toLeftOf="@id/circle_one"
+        app:layout_constraintRight_toRightOf="@id/circle_one"
+        app:layout_constraintTop_toTopOf="@id/circle_one"
+        app:srcCompat="@drawable/mint" />
+
+    <ImageView
+        android:id="@+id/img_lemon"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="3sp"
+        android:layout_marginTop="3sp"
+        android:contentDescription="@string/todo_lemon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_three"
+        app:layout_constraintLeft_toLeftOf="@id/circle_three"
+        app:layout_constraintRight_toRightOf="@id/circle_three"
+        app:layout_constraintTop_toTopOf="@id/circle_three"
+        app:srcCompat="@drawable/lemon" />
+
+    <TextView
+        android:id="@+id/txt_flavor_name"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="9sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/dots2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle_one"
+        tools:ignore="TextContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/radio_flavors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box">
+
+        <RadioButton
+            android:id="@+id/radio_milk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_caramel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_cocoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_mint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_lemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_shaking"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="60sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/shaking"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_mix"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="serif"
+        android:text="@string/mix_it"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box" />
+
+    <!-- RESULT SECTION -->
+
+    <ImageView
+        android:id="@+id/img_cloud"
+        android:layout_width="@dimen/_295sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/todo_cloud"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/pink_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloud" />
+
+    <TextView
+        android:id="@+id/txt_you_got"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="100sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/you_got"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txt_result_drink"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="@font/lucid_dream"
+        android:text="@string/drink_name_result"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="35sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_golden_eden"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="40sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/golden_eden"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_caramel_pine"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="100sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/caramel_pinecone"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_moonlit"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="100sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/moonlit_alley"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_bright_crown"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="110sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/bright_crown"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_green_tea"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="100sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/mint_tea"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_tart"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="100sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/tart"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_sweet_cider"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="110sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/sweet_cider"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_dawning"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="110sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/dawning_dew"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/img_lemon_juice"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="100sp"
+        android:contentDescription="@string/todo_result_drink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:srcCompat="@drawable/lemon_juice"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:id="@+id/txt_result_desc"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_marginBottom="75sp"
+        android:fontFamily="@font/lucid_dream"
+        android:justificationMode="inter_word"
+        android:text="@string/description_here"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box"
+        tools:ignore="TextContrastCheck"
+        tools:targetApi="o" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_new_drink"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="serif"
+        android:text="@string/make_new_drink"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pink_box" />
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/info_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/drawable/box.xml" value="0.2265" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/drawable/circle.xml" value="0.1655" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/drawable/circle_green.xml" value="0.1645" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/drawable/custom_button.xml" value="0.225" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/drawable/window_box.xml" value="0.1725" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/layout-v26/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/layout/activity_launch_screen.xml" value="0.24547101449275363" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Program_Android_Projects/BSU-Project-Assesments/App1-Creative_Calculator/DreamyDrinks/app/src/main/res/layout/popup_window.xml" value="0.24547101449275363" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
